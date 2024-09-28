@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  background-color: #2d2d30;
+}
+
+.App {
+  padding: 10px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.App > h1 {
+  text-align: center;
+  color: white;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 3em; 
+}
+
+.story {
+  position: relative;
+  padding: 1em;
+  border-top: 0.5px solid white; 
+  border-bottom: 0.5px solid white;
+  margin-bottom: 2em;
+  color: lightgray; 
+  background-color:#192734;
+}
+
+.story span.delete {
+  position: absolute;
+  width: 1.5rem;            
+  height: 1.5rem;             
+  text-align: center;
+  line-height: 1.5rem;        
+  top: 0;
+  right: 0;
+  color: #fff;     
+  cursor: pointer;
+  font-size: 0.9rem;           
+}
+
+
+.story_header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  text-decoration: none;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.story_header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.story_header h1 > a:hover {
+  text-decoration: none;
+}
+
+.story_creator {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.story_image {
+  max-width: 20%;
+}
+
+.story_image img {
+  width: 100%;
+}
+
